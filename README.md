@@ -1,24 +1,28 @@
-# 🏁 Deno Starter
+# 🕸️ Online
 
-Simply recursively read a directory in Deno.
+Check if your machine is currently online and connected to the internet in Deno.
 
 ```ts
-import { mode } from "https://raw.githubusercontent.com/denorg/starter/master/mod.ts";
+import { isOnline } from "https://raw.githubusercontent.com/denorg/online/master/mod.ts";
 
-const result = mode();
+const result = await isOnline(); // boolean
 ```
 
 Required permissions:
 
-1. `--allow-read`
+1. `--allow-net`
 
 ## 👩‍💻 Development
 
 Run tests:
 
 ```bash
-deno test --allow-read
+deno test --allow-net
 ```
+
+## ⭐ Related Work
+
+- [sindresorhus/is-online](https://github.com/sindresorhus/is-online) is the Node.js project serving as inspiration for this one
 
 ## 📄 License
 
