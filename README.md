@@ -2,6 +2,8 @@
 
 Check if your machine is currently online and connected to the internet in Deno.
 
+[![Test CI](https://github.com/denorg/online/workflows/Test%20CI/badge.svg)](https://github.com/denorg/online/actions)
+
 ```ts
 import { isOnline } from "https://raw.githubusercontent.com/denorg/online/master/mod.ts";
 
