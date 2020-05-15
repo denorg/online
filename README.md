@@ -10,6 +10,24 @@ import { isOnline } from "https://deno.land/x/online/mod.ts";
 const result = await isOnline(); // boolean
 ```
 
+Alternatively, you can use it directly from the CLI:
+
+```bash
+deno run --allow-net https://deno.land/x/online/cli.ts
+```
+
+You can also install it globally using the following:
+
+```bash
+deno install --allow-net -n online https://deno.land/x/online/mod.ts
+```
+
+Then, the package is available to run:
+
+```bash
+online # Result: You are online
+```
+
 Required permissions:
 
 1. `--allow-net`
