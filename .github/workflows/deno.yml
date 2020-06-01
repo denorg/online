@@ -35,7 +35,7 @@ jobs:
         with:
           node-version: 12.17.0
       - name: Setup package.json
-        run: echo '{"name":"@denorg/online","version":"0.0.0","publishConfig":{"access":"public"},"scripts":{"semantic-release":"semantic-release"},"repository":{"type":"git","url":"https://github.com/online/starter.git"},"author":"Denorg <hi@den.org.in>","license":"MIT","bugs":{"url":"https://github.com/denorg/online/issues"},"homepage":"https://denorg.github.io/online/","devDependencies":{"semantic-release":"^17.0.4","semantic-release-gitmoji":"^1.3.3"}}' > package.json
+        run: echo '{"name":"@denorg/online","version":"0.0.0","publishConfig":{"access":"public"},"scripts":{"semantic-release":"semantic-release"},"repository":{"type":"git","url":"https://github.com/denorg/online.git"},"author":"Denorg <hi@den.org.in>","license":"MIT","bugs":{"url":"https://github.com/denorg/online/issues"},"homepage":"https://denorg.github.io/online/","devDependencies":{"semantic-release":"^17.0.4","semantic-release-gitmoji":"^1.3.3"}}' > package.json
       - name: Install dependencies
         run: npm install
       - name: Release
